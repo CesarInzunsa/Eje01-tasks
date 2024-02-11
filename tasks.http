@@ -1,0 +1,39 @@
+### CREATE A NEW TASK
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "title": "titulo",
+  "description": "descripción"
+}
+
+### GET ALL TASKS
+GET http://localhost:3000/tasks
+
+### GET A TASK BY ID
+GET http://localhost:3000/tasks/1
+
+### UPDATE A TASK BY ID
+PUT http://localhost:3000/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Nuevo titulo",
+  "description": "nueva descripción",
+  "completed": true
+}
+
+### DELETE A TASK BY ID
+DELETE http://localhost:3000/tasks/1
+
+### COUNT TASKS
+GET http://localhost:3000/tasks/count
+
+### GET RECENT TASK
+GET http://localhost:3000/tasks/recent
+
+### GET OLDEST TASK
+GET http://localhost:3000/tasks/oldest
+
+### GET TASKS BY STATUS
+GET http://localhost:3000/tasks/status
